@@ -26,34 +26,18 @@ struct ContentView: View {
             } label: {
                 Text("reset")
             }
+            
+            Text("new feature installed")
 
         }
         .onAppear {
             viewModel.startRecording()
         }
-    }
-}
-
-import CoreMotion
-class ViewModel: ObservableObject {
-    @Published var workoutManager = WorkoutManager()
-//    @Published var motionManager = MotionManager()
-    
-    var motionManager = CMMotionManager()
-    @Published var x = 0.0
-    @Published var y = 0.0
-    @Published var z = 0.0
-    
-    func startRecording() {
-        motionManager.startDeviceMotionUpdates(to: .main) { [weak self] motion, error in
-            guard let self = self, let motion = motion else { return }
-            self.x = self.x > motion.userAcceleration.x ? self.x : motion.userAcceleration.x
-            self.y = self.y > motion.userAcceleration.y ? self.y : motion.userAcceleration.y
-            self.z = self.z > motion.userAcceleration.z ? self.z : motion.userAcceleration.z
+        .onChange(of: viewModel.x) { _ in
+            viewModel.syncData()
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

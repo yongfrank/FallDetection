@@ -2,7 +2,7 @@
  * @Author: Frank Chu
  * @Date: 2023-03-12 22:55:42
  * @LastEditors: Frank Chu
- * @LastEditTime: 2023-03-20 02:11:41
+ * @LastEditTime: 2023-03-26 19:59:34
  * @FilePath: /FallDetection/README.md
  * @Description: 
  * 
@@ -11,6 +11,26 @@
 # Fall Detection
 
 ## Apple Watch 上的速度计和陀螺仪传感器，完善基于速度计和陀螺仪的简单应用
+
+### Watch Connectivity
+
+*[Watch Connectivity](https://zenn.dev/naoya_maeda/articles/d63504a860c36c)
+
+![Watch Connectivity](./resource/WatchConnectivity.png)
+
+```swift
+if WCSession.isSupported() {
+    let session = WCSession.defaultSession()
+    session.delegate = self
+    session.activateSession()
+}
+
+extension AppConnectivityVM: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("activationDidCompleteWith")
+    }
+}
+```
 
 ### Markov Model
 

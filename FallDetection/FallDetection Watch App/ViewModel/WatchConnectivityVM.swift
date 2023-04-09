@@ -11,9 +11,7 @@ import WatchConnectivity
 import CoreMotion
 
 final class ViewModel: NSObject, ObservableObject {
-    @Published var workoutManager = WorkoutManager()
-//    @Published var motionManager = MotionManager()
-    
+
     var motionManager = CMMotionManager()
     @Published var x = 0.0
     @Published var y = 0.0

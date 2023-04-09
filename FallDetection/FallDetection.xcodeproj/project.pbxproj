@@ -18,8 +18,6 @@
 		FE10083129C77B1100CBD5B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE10083029C77B1100CBD5B6 /* Preview Assets.xcassets */; };
 		FE10083D29C77DF200CBD5B6 /* HiddenMarkovModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10083C29C77DF200CBD5B6 /* HiddenMarkovModel.swift */; };
 		FE10084029C77E1400CBD5B6 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10083F29C77E1300CBD5B6 /* StreamReader.swift */; };
-		FE10084329C77E4300CBD5B6 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10084229C77E4300CBD5B6 /* WorkoutManager.swift */; };
-		FE10084529C77FA200CBD5B6 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE10084429C77FA200CBD5B6 /* MotionManager.swift */; };
 		FE49670329D0650F000379AA /* XYZData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49670229D0650F000379AA /* XYZData.swift */; };
 		FE49670429D0650F000379AA /* XYZData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49670229D0650F000379AA /* XYZData.swift */; };
 		FE5848B529D05E1B00281DAF /* WatchConnectivityVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5848B429D05E1B00281DAF /* WatchConnectivityVM.swift */; };
@@ -84,8 +82,6 @@
 		FE10083B29C77C9F00CBD5B6 /* FallDetection-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FallDetection-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FE10083C29C77DF200CBD5B6 /* HiddenMarkovModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenMarkovModel.swift; sourceTree = "<group>"; };
 		FE10083F29C77E1300CBD5B6 /* StreamReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
-		FE10084229C77E4300CBD5B6 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
-		FE10084429C77FA200CBD5B6 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		FE49670129D06374000379AA /* FallDetection Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FallDetection Watch App.entitlements"; sourceTree = "<group>"; };
 		FE49670229D0650F000379AA /* XYZData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZData.swift; sourceTree = "<group>"; };
 		FE58488D29D05B1B00281DAF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -135,6 +131,7 @@
 		FE10081629C77B0F00CBD5B6 /* FallDetection */ = {
 			isa = PBXGroup;
 			children = (
+				FE49671229DC7C06000379AA /* Testing */,
 				FE5848B629D05FAD00281DAF /* ViewModel */,
 				FE10081729C77B0F00CBD5B6 /* FallDetectionApp.swift */,
 				FE10081929C77B0F00CBD5B6 /* ContentView.swift */,
@@ -156,11 +153,11 @@
 			isa = PBXGroup;
 			children = (
 				FE49670129D06374000379AA /* FallDetection Watch App.entitlements */,
+				FE10084129C77E3400CBD5B6 /* Workout */,
 				FE5848B329D05E0A00281DAF /* ViewModel */,
 				FE10083B29C77C9F00CBD5B6 /* FallDetection-Watch-App-Info.plist */,
 				FE10082929C77B1000CBD5B6 /* FallDetectionApp.swift */,
 				FE10082B29C77B1000CBD5B6 /* ContentView.swift */,
-				FE10084129C77E3400CBD5B6 /* Workout */,
 				FE10083E29C77E0C00CBD5B6 /* Helper */,
 				FE10083C29C77DF200CBD5B6 /* HiddenMarkovModel.swift */,
 				FE10082D29C77B1100CBD5B6 /* Assets.xcassets */,
@@ -188,10 +185,15 @@
 		FE10084129C77E3400CBD5B6 /* Workout */ = {
 			isa = PBXGroup;
 			children = (
-				FE10084229C77E4300CBD5B6 /* WorkoutManager.swift */,
-				FE10084429C77FA200CBD5B6 /* MotionManager.swift */,
 			);
 			path = Workout;
+			sourceTree = "<group>";
+		};
+		FE49671229DC7C06000379AA /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Testing;
 			sourceTree = "<group>";
 		};
 		FE58488629D05A1B00281DAF /* Shared */ = {
@@ -343,9 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE10084029C77E1400CBD5B6 /* StreamReader.swift in Sources */,
-				FE10084529C77FA200CBD5B6 /* MotionManager.swift in Sources */,
 				FE10082C29C77B1000CBD5B6 /* ContentView.swift in Sources */,
-				FE10084329C77E4300CBD5B6 /* WorkoutManager.swift in Sources */,
 				FE10082A29C77B1000CBD5B6 /* FallDetectionApp.swift in Sources */,
 				FE49670429D0650F000379AA /* XYZData.swift in Sources */,
 				FE5848B529D05E1B00281DAF /* WatchConnectivityVM.swift in Sources */,

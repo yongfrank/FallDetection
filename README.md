@@ -14,7 +14,7 @@
 
 ### Watch Connectivity
 
-*[Watch Connectivity](https://zenn.dev/naoya_maeda/articles/d63504a860c36c)
+* [Watch Connectivity](https://zenn.dev/naoya_maeda/articles/d63504a860c36c)
 
 ![Watch Connectivity](./resource/WatchConnectivity.png)
 

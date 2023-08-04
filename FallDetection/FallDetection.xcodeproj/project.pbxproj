@@ -131,7 +131,6 @@
 		FE10081629C77B0F00CBD5B6 /* FallDetection */ = {
 			isa = PBXGroup;
 			children = (
-				FE49671229DC7C06000379AA /* Testing */,
 				FE5848B629D05FAD00281DAF /* ViewModel */,
 				FE10081729C77B0F00CBD5B6 /* FallDetectionApp.swift */,
 				FE10081929C77B0F00CBD5B6 /* ContentView.swift */,
@@ -153,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				FE49670129D06374000379AA /* FallDetection Watch App.entitlements */,
-				FE10084129C77E3400CBD5B6 /* Workout */,
 				FE5848B329D05E0A00281DAF /* ViewModel */,
 				FE10083B29C77C9F00CBD5B6 /* FallDetection-Watch-App-Info.plist */,
 				FE10082929C77B1000CBD5B6 /* FallDetectionApp.swift */,
@@ -180,20 +178,6 @@
 				FE10083F29C77E1300CBD5B6 /* StreamReader.swift */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		FE10084129C77E3400CBD5B6 /* Workout */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Workout;
-			sourceTree = "<group>";
-		};
-		FE49671229DC7C06000379AA /* Testing */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Testing;
 			sourceTree = "<group>";
 		};
 		FE58488629D05A1B00281DAF /* Shared */ = {
